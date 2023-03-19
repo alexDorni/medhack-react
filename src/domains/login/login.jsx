@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { NavLink } from "react-router-dom";
-import {loginRequest} from '../../api/requests'
+import { loginRequest } from '../../api/requests'
 
 
 // export function Login() {
@@ -14,7 +14,7 @@ import {loginRequest} from '../../api/requests'
 //       console.log(e);
 //     }
 //   }
-   
+
 //   return (
 //     <div class="rounded-t-lg overflow-hidden border-t border-l border-r border-gray-400 px-3 py-10 bg-gray-200 flex justify-center h-screen">
 //     <div class="w-full max-w-xs">
@@ -44,7 +44,7 @@ import {loginRequest} from '../../api/requests'
 //     </div>
 //   );
 // }
-  
+
 import React from 'react';
 import {
   MDBBtn,
@@ -57,10 +57,11 @@ import {
   MDBCheckbox,
   MDBIcon
 }
-from 'mdb-react-ui-kit';
+  from 'mdb-react-ui-kit';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './login.css'
+import { Button } from "bootstrap";
 
 
 export function Login() {
@@ -68,9 +69,9 @@ export function Login() {
   const onSubmit = async (data) => {
 
     try {
-      const response  = await loginRequest(data);
+      const response = await loginRequest(data);
       localStorage.setItem('token', response.token);
-    } catch(e) {
+    } catch (e) {
       console.log(e);
     }
   }
@@ -81,16 +82,13 @@ export function Login() {
 
         <MDBCol md='6' className='text-center text-md-start d-flex flex-column justify-content-center  h-screen'>
 
-          <h1 className="my-5 display-3 fw-bold ls-tight px-3" style={{color: 'hsl(218, 81%, 95%)'}}>
-            The best offer <br />
-            <span style={{color: 'hsl(218, 81%, 75%)'}}>for your business</span>
+          <h1 className="my-5 display-3 fw-bold ls-tight px-3" style={{ color: 'hsl(218, 81%, 95%)' }}>
+            Stay informed <br />
+            <span style={{ color: 'hsl(218, 81%, 75%)' }}>prevention & awareness</span>
           </h1>
 
-          <p className='px-3' style={{color: 'hsl(218, 81%, 85%)'}}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Eveniet, itaque accusantium odio, soluta, corrupti aliquam
-            quibusdam tempora at cupiditate quis eum maiores libero
-            veritatis? Dicta facilis sint aliquid ipsum atque?
+          <p className='px-3' style={{ color: 'hsl(218, 81%, 85%)' }}>
+            Instert your <strong>CNP</strong> and your <strong>Password</strong> given by your physician.
           </p>
 
         </MDBCol>
@@ -103,11 +101,13 @@ export function Login() {
           <MDBCard className='my-5 bg-glass'>
             <MDBCardBody className='p-5'>
 
-              <MDBInput wrapperClass='mb-4' label='CNP' id='form3' type='tel'/>
-              <MDBInput {...register("password")} wrapperClass='mb-4' label='Password' id='form4' type='password'/>
-
-              <MDBBtn className='w-100 mb-4' size='md' type="submit" form="form">Log in</MDBBtn>
-
+              <MDBInput wrapperClass='mb-4' label='CNP' id='form3' type='tel' />
+              <MDBInput {...register("password")} wrapperClass='mb-4' label='Password' id='form4' type='password' />
+              <div class="flex items-center justify-between">
+                <button class="w-100 w-100 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                  Log In
+                </button>
+              </div>
             </MDBCardBody>
           </MDBCard>
 
