@@ -14,7 +14,7 @@
 */
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { ComboboxUsers } from './combobox'
+
 import {
   BarsArrowUpIcon,
   CheckBadgeIcon,
@@ -51,7 +51,7 @@ const vaccinesToBeOffered = [
     disease: 'Hep B',
     location: 'Cluj Napoca',
     starred: true,
-    active: false,
+    active: true,
   },
 
   {
