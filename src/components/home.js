@@ -23,7 +23,7 @@ import {
   RectangleStackIcon,
   StarIcon,
   BeakerIcon,
-  UserGroupIcon
+  UserGroupIcon,
 } from '@heroicons/react/20/solid'
 import { Bars3CenterLeftIcon, XMarkIcon } from '@heroicons/react/24/outline'
 

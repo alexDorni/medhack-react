@@ -104,9 +104,11 @@ export function Login() {
               <MDBInput wrapperClass='mb-4' label='Password' id='form4' type='password'/>
 
               <div class="flex items-center justify-between">
+              <NavLink to="../home" style={{ textDecoration: 'none', color: 'white' }}>
                 <button class="w-100 w-100 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-                <NavLink to="../home" style={{ textDecoration: 'none', color: 'white' }}>Log In</NavLink>
+                Log In
                 </button>
+                </NavLink>
               </div>
               {/* <MDBBtn className='w-100 mb-4' size='md' type="submit" form="form">Log in</MDBBtn> */}
 
