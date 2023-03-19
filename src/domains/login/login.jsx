@@ -87,17 +87,17 @@ export function Login() {
           </h1>
 
           <p className='px-3' style={{ color: 'hsl(218, 81%, 85%)' }}>
-            Instert your <strong>CNP</strong> and your <strong>Password</strong> given by your physician.
+            Insert your <strong>CNP</strong> and your <strong>Password</strong> given by your physician.
           </p>
 
         </MDBCol>
 
-        <MDBCol md='6' className='position-relative'>
+        <MDBCol md='6' className='flex position-relative items-center'>
 
           <div id="radius-shape-1" className="position-absolute rounded-circle shadow-5-strong"></div>
           <div id="radius-shape-2" className="position-absolute shadow-5-strong"></div>
 
-          <MDBCard className='my-5 bg-glass'>
+          <MDBCard className='my-5 bg-glass w-full max-w-[480px]'>
             <MDBCardBody className='p-5'>
 
               <MDBInput wrapperClass='mb-4' label='CNP' id='form3' type='tel'/>

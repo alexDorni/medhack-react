@@ -67,7 +67,7 @@ export function Example() {
                       </a>
                     </p>
                   </div>
-                  <div className="whitespace-nowrap text-centered text-sm text-gray-500">
+                  <div className="whitespace-nowrap text-left text-sm text-gray-500">
                     <time dateTime={event.datetime}>{event.date}</time>
                   </div>
                 </div>
