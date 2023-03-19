@@ -124,7 +124,7 @@ export function Home() {
                     <div className="flex-shrink-0">
                       <img
                         className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=300"
+                        src="https://www.elitesingles.co.uk/wp-content/uploads/sites/59/2019/11/2b_en_articleslide_sm2-350x264.jpg"
                         alt="Your Company"
                       />
                     </div>
@@ -183,7 +183,7 @@ export function Home() {
                             <span className="sr-only">Open user menu</span>
                             <img
                               className="h-8 w-8 rounded-full"
-                              src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80"
+                              src="https://www.elitesingles.co.uk/wp-content/uploads/sites/59/2019/11/2b_en_articleslide_sm2-350x264.jpg"
                               alt=""
                             />
                           </Menu.Button>
@@ -274,12 +274,12 @@ export function Home() {
                         <div className="h-12 w-12 flex-shrink-0">
                           <img
                             className="h-12 w-12 rounded-full"
-                            src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80"
+                            src="https://www.elitesingles.co.uk/wp-content/uploads/sites/59/2019/11/2b_en_articleslide_sm2-350x264.jpg"
                             alt=""
                           />
                         </div>
                         <div className="space-y-1">
-                          <div className="text-sm font-medium text-gray-900">Debbie Lewis</div>
+                          <div className="text-sm font-medium text-gray-900">Dr. Radu S. Pop</div>
                           <a href="#" className="group flex items-center space-x-2.5">
                           </a>
                         </div>
@@ -482,7 +482,7 @@ export function Home() {
                       <div className="flex space-x-3">
                         <img
                           className="h-6 w-6 rounded-full"
-                          src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80"
+                          src="https://www.elitesingles.co.uk/wp-content/uploads/sites/59/2019/11/2b_en_articleslide_sm2-350x264.jpg"
                           alt=""
                         />
                         <div className="flex-1 space-y-1">
@@ -498,9 +498,6 @@ export function Home() {
                     </li>
                   ))}
                 </ul>
-
-
-
               </div>
             </div>
           </div>
