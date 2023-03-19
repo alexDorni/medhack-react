@@ -61,20 +61,19 @@ import {
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './login.css'
-import { Button } from "bootstrap";
 
 
 export function Login() {
-  const { register, handleSubmit } = useForm();
-  const onSubmit = async (data) => {
+  // const { register, handleSubmit } = useForm();
+  // const onSubmit = async (data) => {
 
-    try {
-      const response = await loginRequest(data);
-      localStorage.setItem('token', response.token);
-    } catch (e) {
-      console.log(e);
-    }
-  }
+  //   try {
+  //     const response  = await loginRequest(data);
+  //     localStorage.setItem('token', response.token);
+  //   } catch(e) {
+  //     console.log(e);
+  //   }
+  // }
   return (
     <MDBContainer fluid className='p-4 background-radial-gradient overflow-hidden'>
 
@@ -101,13 +100,16 @@ export function Login() {
           <MDBCard className='my-5 bg-glass'>
             <MDBCardBody className='p-5'>
 
-              <MDBInput wrapperClass='mb-4' label='CNP' id='form3' type='tel' />
-              <MDBInput {...register("password")} wrapperClass='mb-4' label='Password' id='form4' type='password' />
+              <MDBInput wrapperClass='mb-4' label='CNP' id='form3' type='tel'/>
+              <MDBInput wrapperClass='mb-4' label='Password' id='form4' type='password'/>
+
               <div class="flex items-center justify-between">
                 <button class="w-100 w-100 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-                  Log In
+                <NavLink to="../home" style={{ textDecoration: 'none', color: 'white' }}>Log In</NavLink>
                 </button>
               </div>
+              {/* <MDBBtn className='w-100 mb-4' size='md' type="submit" form="form">Log in</MDBBtn> */}
+
             </MDBCardBody>
           </MDBCard>
 
