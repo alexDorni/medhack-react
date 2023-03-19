@@ -24,6 +24,7 @@ import {
   StarIcon,
   BeakerIcon,
   UserGroupIcon,
+  InformationCircleIcon,
 } from '@heroicons/react/20/solid'
 import { Bars3CenterLeftIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -36,20 +37,57 @@ const userNavigation = [
   { name: 'Settings', href: '#' },
   { name: 'Sign out', href: '#' },
 ]
-const projects = [
+const vaccinesToBeOffered = [
   {
-    name: 'Workcation',
+    name: 'Hepatitis B Vaccine',
     href: '#',
     siteHref: '#',
     repoHref: '#',
-    // repo: 'debbielewis/workcation',
-    tech: 'Laravel',
-    lastDeploy: '3h ago',
-    location: 'United states',
+    administration: 'Administration: today',
+    disease: 'Hep B',
+    location: 'Cluj Napoca',
     starred: true,
     active: false,
   },
-  // More projects...
+  
+  {
+    name: 'Calmette Guerrin Vaccine',
+    href: '#',
+    siteHref: '#',
+    repoHref: '#',
+    administration: 'Administration: next week',
+    disease: 'BCG',
+    location: 'Cluj-Napoca',
+    starred: true,
+    active: false,
+  },
+
+  {
+    name: 'DTPa-VPI-Hib-Hep. B',
+    href: '#',
+    siteHref: '#',
+    repoHref: '#',
+    administration: 'Administration: May 2023',
+    disease: 'DTPa-VPI-Hib-Hep. B',
+    location: 'Cluj-Napoca',
+    starred: true,
+    active: false,
+  },
+
+  {
+    name: 'Conjugated pneumococcal vaccine',
+    href: '#',
+    siteHref: '#',
+    repoHref: '#',
+    administration: 'Administration: May 2023',
+    disease: 'Pneumococcal',
+    location: 'Cluj-Napoca',
+    starred: true,
+    active: false,
+  }
+
+
+
 ]
 const activityItems = [
   { project: 'Workcation', commit: '2d89f0c8', environment: 'production', time: '1h' },
@@ -338,7 +376,7 @@ export function Home() {
                 </div>
               </div>
               <ul role="list" className="divide-y divide-gray-200 border-b border-gray-200">
-                {projects.map((project) => (
+                {vaccinesToBeOffered.map((project) => (
                   <li
                     key={project.repo}
                     className="relative py-5 pl-4 pr-6 hover:bg-gray-50 sm:py-6 sm:pl-6 lg:pl-8 xl:pl-6"
@@ -399,7 +437,7 @@ export function Home() {
                             href={project.siteHref}
                             className="relative text-sm font-medium text-gray-500 hover:text-gray-900"
                           >
-                            Visit site
+                            Info
                           </a>
                           <button
                             type="button"
@@ -408,21 +446,19 @@ export function Home() {
                             <span className="sr-only">
                               {project.starred ? 'Add to favorites' : 'Remove from favorites'}
                             </span>
-                            <StarIcon
+                        
+                          </button>
+                          <InformationCircleIcon
                               className={classNames(
-                                project.starred
-                                  ? 'text-yellow-300 hover:text-yellow-400'
-                                  : 'text-gray-300 hover:text-gray-400',
                                 'h-5 w-5'
                               )}
                               aria-hidden="true"
                             />
-                          </button>
                         </p>
                         <p className="flex space-x-2 text-sm text-gray-500">
-                          <span>{project.tech}</span>
+                          <span>{project.administration}</span>
                           <span aria-hidden="true">&middot;</span>
-                          <span>Last deploy {project.lastDeploy}</span>
+                          <span>Disease {project.disease}</span>
                           <span aria-hidden="true">&middot;</span>
                           <span>{project.location}</span>
                         </p>
@@ -455,7 +491,7 @@ export function Home() {
                             <p className="text-sm text-gray-500">{item.time}</p>
                           </div>
                           <p className="text-sm text-gray-500">
-                            Deployed {item.project} ({item.commit} in master) to {item.environment}
+                            Vaccines addministrated: 1
                           </p>
                         </div>
                       </div>
