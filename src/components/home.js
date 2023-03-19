@@ -124,8 +124,7 @@ export function Home() {
                     <div className="flex-shrink-0">
                       <img
                         className="h-8 w-auto"
-                        src="https://www.elitesingles.co.uk/wp-content/uploads/sites/59/2019/11/2b_en_articleslide_sm2-350x264.jpg"
-                        alt="Your Company"
+                        src="https://mc-42b990dd-5dae-4647-b81e-424724-cdn-endpoint.azureedge.net/-/media/blogs/2020/freevaccinelogo.png?rev=72dbc0db8dd84382a9525f72b161bb30"
                       />
                     </div>
                   </div>
