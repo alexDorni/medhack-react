@@ -49,7 +49,7 @@ const vaccinesToBeOffered = [
     starred: true,
     active: false,
   },
-  
+
   {
     name: 'Calmette Guerrin Vaccine',
     href: '#',
@@ -284,11 +284,11 @@ export function Home() {
                           </a>
                         </div>
                         <div className="flex flex-col space-y-6 sm:flex-row sm:space-y-0 sm:space-x-8 xl:flex-col xl:space-x-0 xl:space-y-6">
-                      <div className="flex items-center space-x-2">
-                        <UserGroupIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-                        <span className="text-sm font-medium text-gray-500">Parent</span>
-                      </div>
-                    </div>
+                          <div className="flex items-center space-x-2">
+                            <UserGroupIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+                            <span className="text-sm font-medium text-gray-500">Parent</span>
+                          </div>
+                        </div>
                       </div>
                       {/* Action buttons */}
                       <div className="flex flex-col sm:flex-row xl:flex-col">
@@ -446,14 +446,14 @@ export function Home() {
                             <span className="sr-only">
                               {project.starred ? 'Add to favorites' : 'Remove from favorites'}
                             </span>
-                        
+
                           </button>
                           <InformationCircleIcon
-                              className={classNames(
-                                'h-5 w-5'
-                              )}
-                              aria-hidden="true"
-                            />
+                            className={classNames(
+                              'h-5 w-5'
+                            )}
+                            aria-hidden="true"
+                          />
                         </p>
                         <p className="flex space-x-2 text-sm text-gray-500">
                           <span>{project.administration}</span>
@@ -498,12 +498,9 @@ export function Home() {
                     </li>
                   ))}
                 </ul>
-                <div className="border-t border-gray-200 py-4 text-sm">
-                  <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-900">
-                    View all activity
-                    <span aria-hidden="true"> &rarr;</span>
-                  </a>
-                </div>
+
+
+
               </div>
             </div>
           </div>
